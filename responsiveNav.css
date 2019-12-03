@@ -16,6 +16,7 @@ body {
 	transition: all 0.3s ease;
 	color: #fff;
 	font-size: 200%;
+	width: 20%;
 }
 .icon-bar a:hover {
 	background-color: #000;
@@ -30,5 +31,23 @@ body {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-device-width: 1000px) {
+	.icon-bar a {
+		width: 50%;
+	}
+
+	.icon-bar a:nth-child(1) {
+		width: 100%;
+	}
+}
+
+@media (max-device-width: 500px) {
+	.icon-bar a {
+		width: 100%;
+	}
 }
 
